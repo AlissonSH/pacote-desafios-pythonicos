@@ -19,7 +19,7 @@ def verbing(s):
         s = s
     return s
 
-""" Coloquei duas opções!!!
+""" Outra opção!!!
     if len(s) < 3:
         return s
     if len(s) > 3 and s[-3:] == 'ing':
