@@ -15,6 +15,12 @@ def sort_last(tuples):
         lista.append(t)
     return sorted(lista, key=lambda item: item[-1:])
 
+''' 
+Exemplo mais curto:
+return sorted(tuples, key=lambda item: item[-1:]) 
+'''
+
+
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
