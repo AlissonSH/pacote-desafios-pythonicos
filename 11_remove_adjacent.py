@@ -9,8 +9,11 @@ Irá retornar: [1, 2, 3]
 """
 
 def remove_adjacent(nums):
-    # +++ SUA SOLUÇÃO +++
-    return
+    ordem = []
+    for n in nums:
+        if len(ordem) == 0 or ordem[-1] != n:
+            ordem.append(n)
+    return ordem
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
