@@ -11,7 +11,7 @@ PS: Python não possui o operador ++, porém += funciona.
 def match_ends(words):
     cont = 0
     for w in words:
-        if len(w) >= 2 and w[0] == w[-1:]:
+        if len(w) >= 2 and w[0] == w[-1]:
             cont += 1
     return cont
 
