@@ -56,6 +56,34 @@ import sys
 
 # +++ SUA SOLUÇÃO +++
 # Defina as funções print_words(filename) e print_top(filename).
+def print_words(filename):
+    arquivo = open(filename, 'r')
+    lista = arquivo.read()
+    x = lista.lower().split()
+    x.sort()
+    contar = {}
+    for novo in x:
+        if novo in contar:
+            contar[novo] += 1
+        else:
+            contar[novo] = 1
+    for k, v in contar.items():
+        print(f'{k} {v}')
+
+
+def print_top(filename):
+    arquivo = open(filename, 'r')
+    lista = arquivo.read()
+    x = lista.lower().split()
+    contar = {}
+    for novo in x:
+        if novo in contar:
+            contar[novo] += 1
+        else:
+            contar[novo] = 1
+    sorted(contar.items(), key=lambda item: item[1], reverse=True)
+    for k, v in contar.items():
+        print(f'{k} {v}')
 
 
 # A função abaixo chama print_words() ou print_top() de acordo com os
