@@ -81,8 +81,8 @@ def print_top(filename):
             contar[novo] += 1
         else:
             contar[novo] = 1
-    sorted(contar.items(), key=lambda item: item[1], reverse=True)
-    for k, v in contar.items():
+    contar = sorted(contar.items(), key=lambda item: item[1], reverse=True)
+    for k, v in contar:
         print(f'{k} {v}')
 
 
